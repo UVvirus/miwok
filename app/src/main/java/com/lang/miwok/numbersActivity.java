@@ -4,6 +4,7 @@ import android.app.*;
 import android.os.*;
 import java.util.*;
 import android.widget.*;
+import android.util.*;
 
 public class numbersActivity extends Activity
 {@Override
@@ -29,28 +30,40 @@ public class numbersActivity extends Activity
 	
 		  
 		//create a arraylist
-		ArrayList<String>wordsArrayList=new ArrayList<String>();
-		wordsArrayList.add("one");
-		wordsArrayList.add("two");
-		wordsArrayList.add("three");
-		wordsArrayList.add("four");
-		wordsArrayList.add("five");
-		wordsArrayList.add("six");
-		wordsArrayList.add("seven");
-		wordsArrayList.add("eight");
-		wordsArrayList.add("nine");
-		wordsArrayList.add("ten");
+		ArrayList<word>wordsArrayList=new ArrayList<word>();
+		wordsArrayList.add(new word("one","lutti"));
+		wordsArrayList.add(new word("two","otiiko"));
+		wordsArrayList.add(new word("three","thjki"));
+		wordsArrayList.add(new word("four","thhb"));
+		wordsArrayList.add(new word("five",""));
+		wordsArrayList.add(new word("six",""));
+		wordsArrayList.add(new word("seven",""));
+		wordsArrayList.add(new word("eight",""));
+		wordsArrayList.add(new word("nine",""));
+		wordsArrayList.add(new word("ten",""));
 		
+		wordAdapter adapter=new wordAdapter(this,wordsArrayList);
+		ListView listView=(ListView)findViewById(R.id.list);
+		listView.setAdapter(adapter);
+/*--------------------------------------------------------------------------------------		
 		LinearLayout rootView=(LinearLayout)findViewById(R.id.rootView);
-		int index=0;
+		//for loop example
+		for(int index=0;index<wordsArrayList.size();index++){
+			TextView wordList=new TextView(this);
+			wordList.setText(wordsArrayList.get(index));
+			rootView.addView(wordList);
+		}
+/*--------------------------------------------------------------------------------*/		
+		//while loop example
+		/*int index=0;
 		
 		while(index<wordsArrayList.size()){
 		
 		TextView wordList=new TextView(this);
 		wordList.setText(wordsArrayList.get(index));
-		rootView.addView(wordList);
+		rootView.addView(wordLis,t);
 		index++;
-		}
+		}*/
 		
 /*........................................................................*/	
 		//For reference
