@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">prabesh</string>
+    <string name="MODE_PRIVATE">Hello world!</string>
+    <string name="user_name">divi</string>
+	<string name="user_password">yuvaraj</string>
+	<string name="login">loginn</string>
+	
+	<string name="loginPreference">com.android.prabesh_loginPrefernce</string>
+	<string name="loginState">com.android.prabesh_login_state</string>
+</resources>

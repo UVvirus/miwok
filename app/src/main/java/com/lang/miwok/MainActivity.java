@@ -50,7 +50,9 @@ public class MainActivity extends Activity
 							Intent intent=new Intent(MainActivity.this,familyMembersActivity.class);
 							startActivity(intent);
 							}});
-						}}
+		}
+							
+						}
 					
 						
 					

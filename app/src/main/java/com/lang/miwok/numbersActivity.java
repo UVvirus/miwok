@@ -11,7 +11,7 @@ public class numbersActivity extends Activity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.number);
+        setContentView(R.layout.listitem);
    
 		//create an array of words(For reference)
 		/*String[] words=new String[10];
